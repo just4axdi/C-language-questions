@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="a">
+    <h3>Question 1</h3>
+    <pre>Write a program to enter a value from user and display it using pointer.</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include <stdio.h>
+
+void main()
+{
+    int a, *p;
+
+    printf("Enter a value: ");
+    scanf("%d", &a);
+
+    p = &a;
+
+    printf("Value = %d", *p);
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Output</h3>
+
+<pre>Enter a value: 10
+Value = 10</pre>
+
+</div>
+</body>
+</html>

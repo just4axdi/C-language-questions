@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="a">
+    <h3>Question 1</h3>
+    <pre>Write a program to show an example of pre-increment.</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    int a = 5;
+
+    printf("Value of a = %d\n", a);
+    printf("Pre-increment = %d", ++a);
+}
+</pre>
+
+</div>
+<div class="output">
+
+            <h3>Value of a = 5<br>
+Pre-increment = 6</h3> 
+</div>
+<div class="a">
+    <h3>Question 2</h3>
+    <pre>Write a program to show an example of pre-decrement.</pre>
+</div>
+
+<!-- Coding Box -->
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    int a = 5;
+
+    printf("Value of a = %d\n", a);
+    printf("Pre-decrement = %d", --a);
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Value of a = 5<br>
+Pre-decrement = 4</h3>
+
+</div>
+<div class="a">
+    <h3>Question 3</h3>
+    <pre>Write a program to enter 2 numbers from user, add the numbers and show the answer, again take 2 numbers <br>from user, subtract the numbers and display the answer, again take 2 numbers from user and multiply the <br>numbers and display the answer, again take 2 numbers from user, divide the numbers <br>and display the answer, and again take 2 numbers from user, find the remainder and display the answer?</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    int a, b;
+
+    printf("Enter two numbers for addition: ");
+    scanf("%d %d", &amp;a, &amp;b);
+    printf("Addition = %d\n", a + b);
+
+    printf("Enter two numbers for subtraction: ");
+    scanf("%d %d", &amp;a, &amp;b);
+    printf("Subtraction = %d\n", a - b);
+
+    printf("Enter two numbers for multiplication: ");
+    scanf("%d %d", &amp;a, &amp;b);
+    printf("Multiplication = %d\n", a * b);
+
+    printf("Enter two numbers for division: ");
+    scanf("%d %d", &amp;a, &amp;b);
+    printf("Division = %d\n", a / b);
+
+    printf("Enter two numbers for remainder: ");
+    scanf("%d %d", &amp;a, &amp;b);
+    printf("Remainder = %d\n", a % b);
+}</pre>
+
+</div>
+
+<div class="output">
+    <h3>Output</h3>
+    <pre>Enter two numbers for addition: 10 5
+Addition = 15
+
+Enter two numbers for subtraction: 10 5
+Subtraction = 5
+
+Enter two numbers for multiplication: 10 5
+Multiplication = 50
+
+Enter two numbers for division: 10 5
+Division = 2
+
+Enter two numbers for remainder: 10 3
+Remainder = 1</pre>
+</div>
+<div class="a">
+    <h3>Question 4</h3>
+    <pre>Write a program to enter a number from the user. The length of the number depends on the user. The <br>programmer should print the last digit of the number.</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    int num, last;
+
+    printf("Enter a number: ");
+    scanf("%d", &amp;num);
+
+    last = num % 10;
+
+    printf("Last digit = %d", last);
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Output</h3>
+    <pre>Enter a number: 12345
+Last digit = 5</pre>
+
+</div>
+<div class="a">
+    <h3>Question 5</h3>
+    <pre>Write a program to enter a decimal number from the user (float) and print the right-hand side of the decimal point?</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    float num;
+    int decimal;
+
+    printf("Enter a decimal number: ");
+    scanf("%f", &amp;num);
+
+    decimal = ((int)(num * 10)) % 10;
+
+    printf("Right-hand digit = %d", decimal);
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Output</h3>
+    <pre>Enter a decimal number: 12.5
+Right-hand digit = 5</pre>
+
+</div>
+<div class="a">
+    <h3>Question 6</h3>
+    <pre>Write a program to enter a number from the user and find out the cube of the number.</pre>
+</div>
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    int num, cube;
+
+    printf("Enter a number: ");
+    scanf("%d", &amp;num);
+
+    cube = num * num * num;
+
+    printf("Cube of number = %d", cube);
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Output</h3>
+    <pre>Enter a number: 5
+Cube of number = 125</pre>
+
+</div>
+<div class="a">
+    <h3>Question 7</h3>
+    <pre>Write a program to enter marks of students and calculate the average of students' marks.</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    float m1, m2, m3, avg;
+
+    printf("Enter marks of three subjects: ");
+    scanf("%f %f %f", &amp;m1, &amp;m2, &amp;m3);
+
+    avg = (m1 + m2 + m3) / 3;
+
+    printf("Average marks = %.2f", avg);
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Output</h3>
+    <pre>Enter marks of three subjects: 80 70 90
+Average marks = 80.00</pre>
+
+</div>
+<div class="a">
+    <h3>Question 8</h3>
+    <pre>Write a program to calculate simple interest using the formula SI = (P × R × T) / 100.</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    float P, R, T, SI;
+
+    printf("Enter principal amount: ");
+    scanf("%f", &amp;P);
+
+    printf("Enter rate of interest: ");
+    scanf("%f", &amp;R);
+
+    printf("Enter time: ");
+    scanf("%f", &amp;T);
+
+    SI = (P * R * T) / 100;
+
+    printf("Simple Interest = %.2f", SI);
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Output</h3>
+    <pre>Enter principal amount: 10000
+Enter rate of interest: 5
+Enter time: 2
+Simple Interest = 1000.00</pre>
+
+</div>
+<div class="a">
+    <h3>Question 9</h3>
+    <pre>Write a program to print the following pattern on the screen:
+11111
+11111
+11111</pre>
+</div>
+
+<div class="box">
+
+    <h3>Coding</h3>
+
+<pre>#include &lt;stdio.h&gt;
+
+void main()
+{
+    printf("11111\n");
+    printf("11111\n");
+    printf("11111");
+}
+</pre>
+
+</div>
+
+<div class="output">
+
+    <h3>Output</h3>
+    <pre>11111
+11111
+11111</pre>
+
+</div>
+</body>
+</html>
